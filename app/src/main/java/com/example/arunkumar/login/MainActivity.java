@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void validate(String userName, String userPassword){
-        if((userName == "Admin") && (userPassword == "12345")){
-            Intent intent = new Intent(MainActivity.this, HompageActivity.class);
+        if(userName.equalsIgnoreCase("Admin") && userPassword.equalsIgnoreCase("12345")){
+            Intent intent = new Intent(MainActivity.this, MapsActivity.class);
             startActivity(intent);
         }
     }
